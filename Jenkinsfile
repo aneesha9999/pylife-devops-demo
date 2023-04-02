@@ -38,7 +38,7 @@ pipeline {
                     sh 'docker build . -t aneesha9999/app30:test'
                     sh 'docker login -u aneesha9999 -p ${DOCKER_TOKEN}'
                     sh 'docker push aneesha9999/app30:test'
-                    sh 'docker run -p 97:8080 -d aneesha9999/app30:test'
+                    sh 'docker run -p 92:8080 -d aneesha9999/app30:test'
                 }
                 }
         }
