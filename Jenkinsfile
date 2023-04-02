@@ -34,10 +34,10 @@ pipeline {
             stage ('Docker Build && Push && RUN ') {
                
                 steps {
-                    sh 'docker build . -t aneesha9999/app29:test'
+                    sh 'docker build . -t aneesha9999/app30:test'
                     sh 'docker login -u aneesha9999 -p dckr_pat_h7R41ziKv8owJCyx2j1yy1_Wzz0'
-                    sh 'docker push aneesha9999/app29:test'
-                    sh 'docker run -p 95:8080 -d aneesha9999/app29:test'
+                    sh 'docker push aneesha9999/app30:test'
+                    sh 'docker run -p 95:8080 -d aneesha9999/app30:test'
                 }
             
         }
